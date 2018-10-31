@@ -3,5 +3,5 @@ import 'bootstrap';
 import './index.scss';
 
 $('.btn').on('click', () => {
-  $('#stuff').append('<p>hi</p>');
+  $('#stuff').append('<h1>hi</h1>');
 });
