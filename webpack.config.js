@@ -26,27 +26,26 @@ module.exports = {
     extractScss
   ],
   module: {
-    rules: [
-      {
-        enforce: 'pre',
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: 'eslint-loader'
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: 'babel-loader'
-      },
-      {
-        test: /(\.css|\.scss)$/,
-        exclude: /node_modules/,
-        use: extractScss.extract({
-          use: [{ loader: 'css-loader' }, { loader: 'sass-loader' }],
-          fallback: 'style-loader'
-        })
-      }
-    ]
+    rules: [{
+      enforce: 'pre',
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: 'eslint-loader'
+    }, {
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: 'babel-loader'
+    }, {
+      test: /(\.css|\.scss)$/,
+      exclude: /node_modules/,
+      use: extractScss.extract({
+        use: [
+          { loader: 'css-loader' },
+          { loader: 'sass-loader' }
+        ],
+        fallback: 'style-loader'
+      })
+    }]
   },
   devServer: {
     historyApiFallback: true,
