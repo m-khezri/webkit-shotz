@@ -1,5 +1,5 @@
 {
-  "name": "webpack-Shotz",
+  "name": "webpack-shotz",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,17 +9,19 @@
     "dev": "NODE_ENV=development webpack-dev-server --content-base dist --hot",
     "start": "npm run lint && npm run dev",
     "movies": "json-server db/movies.json --port 3003",
-    "locations": "json-server db/locations.json --port 3004",
+    "locations": "json-server db/locations.json --port 3004"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/m-khezri/Webpack-intro.git"
+    "url": "git+https://github.com/nss-evening-cohort-8/webpack-shotz.git"
   },
-  "author": "Mohammad Khezri",
+  "keywords": [],
+  "author": "Zoe Ames",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/m-khezri/Webpack-intro/issues"
+    "url": "https://github.com/nss-evening-cohort-8/webpack-shotz/issues"
   },
+  "homepage": "https://github.com/nss-evening-cohort-8/webpack-shotz#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
